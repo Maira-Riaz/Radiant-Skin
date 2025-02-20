@@ -1,12 +1,13 @@
 "use client"
+
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion"
 import Link from "next/link"
-import ParallaxBackground from "../components/ParallaxBackground"
-import GlassmorphicCard from "../components/GlassmorphicCard"
-import ProductCarousel from "../components/ProductCarousel"
-import TestimonialMarquee from "../components/TestimonialMarquee"
-import BeforeAfterSlider from "../components/BeforeAfterSlider"
-import ShimmerButton from "../components/ShimmerButton"
+import ParallaxBackground from "@/components/ParallaxBackground"
+import GlassmorphicCard from "@/components/GlassmorphicCard"
+import ProductCarousel from "@/components/ProductCarousel"
+import TestimonialMarquee from "@/components/TestimonialMarquee"
+import BeforeAfterSlider from "@/components/BeforeAfterSlider"
+import ShimmerButton from "@/components/ShimmerButton"
 
 export default function Home() {
   const { scrollY } = useScroll()
@@ -55,11 +56,41 @@ const HeroSection = () => {
 
 const ProductShowcase = () => {
   const products = [
-    { id: 1, name: "Hydrating Serum", image: "height=300&width=300", price: 49.99 },
-    { id: 2, name: "Rejuvenating Cream", image: "/placeholder.svg?height=300&width=300", price: 59.99 },
-    { id: 3, name: "Gentle Cleanser", image: "/placeholder.svg?height=300&width=300", price: 29.99 },
-    { id: 4, name: "Brightening Mask", image: "/placeholder.svg?height=300&width=300", price: 39.99 },
-    { id: 5, name: "Firming Eye Cream", image: "/placeholder.svg?height=300&width=300", price: 44.99 },
+    {
+      id: 1,
+      name: "Hydrating Serum",
+      image:
+        "https://images.unsplash.com/photo-1601049541067-adaf79e7408e?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      price: 49.99,
+    },
+    {
+      id: 2,
+      name: "Rejuvenating Cream",
+      image:
+        "https://plus.unsplash.com/premium_photo-1674949802338-f94005eb5b0a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      price: 59.99,
+    },
+    {
+      id: 3,
+      name: "Gentle Cleanser",
+      image:
+        "https://images.unsplash.com/photo-1629198726018-604230bdb091?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      price: 29.99,
+    },
+    {
+      id: 4,
+      name: "Brightening Mask",
+      image:
+        "https://images.unsplash.com/photo-1619153709656-b2cf605b819b?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      price: 39.99,
+    },
+    {
+      id: 5,
+      name: "Firming Eye Cream",
+      image:
+        "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fDB8fHww",
+      price: 44.99,
+    },
   ]
 
   return (
@@ -77,27 +108,32 @@ const TestimonialSection = () => {
     {
       name: "Sarah L.",
       quote: "My skin has never looked better! I'm glowing from within.",
-      avatar: "/placeholder.svg?height=80&width=80",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=faces&auto=format&q=60",
     },
     {
       name: "Michael R.",
       quote: "Finally, a skincare line that delivers on its promises.",
-      avatar: "/placeholder.svg?height=80&width=80",
+      avatar:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces&auto=format&q=60",
     },
     {
       name: "Emily T.",
       quote: "I've received so many compliments since I started using these products!",
-      avatar: "/placeholder.svg?height=80&width=80",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces&auto=format&q=60",
     },
     {
       name: "David K.",
       quote: "The results are amazing. My skin feels rejuvenated and looks younger.",
-      avatar: "/placeholder.svg?height=80&width=80",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces&auto=format&q=60",
     },
     {
       name: "Lisa M.",
       quote: "I love how gentle yet effective these products are. Highly recommended!",
-      avatar: "/placeholder.svg?height=80&width=80",
+      avatar:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=faces&auto=format&q=60",
     },
   ]
 
@@ -118,11 +154,12 @@ const BeforeAfterSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-rose-900">See the Difference</h2>
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <BeforeAfterSlider
-            beforeImage="/placeholder.svg?height=400&width=600"
-            afterImage="/placeholder.svg?height=400&width=600"
+            beforeImage="https://plus.unsplash.com/premium_photo-1679750867341-99e26cb8898e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGZhY2V8ZW58MHx8MHx8fDA%3D"
+            afterImage="https://images.unsplash.com/photo-1556942057-94aaf3ae5d6e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
+          <p className="text-center mt-6 text-rose-600">Results after 4 weeks of consistent use</p>
         </div>
       </div>
     </section>
