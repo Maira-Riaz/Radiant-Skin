@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -7,13 +6,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-
-=======
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
->>>>>>> c6c3c04 (Initial commit from Create Next App)
