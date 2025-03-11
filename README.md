@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Radiant Skincare Website
 
-## Getting Started
+![Gliss Skincare](https://images.unsplash.com/photo-1570554886111-e80fcca6a029?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fDB8fHww)
 
-First, run the development server:
+Radiant Skincare is a modern, luxurious skincare brand focused on delivering radiant and healthy skin. This repository contains the source code for the Gliss e-commerce website built with Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop
+- **Interactive UI**: Animations and transitions using Framer Motion
+- **Product Showcase**: Dynamic product carousel with Swiper.js
+- **Before/After Comparison**: Interactive slider to showcase product results
+- **Testimonials**: Customer testimonials displayed in a marquee
+- **Shopping Cart**: Full e-commerce functionality with cart management
+- **Stripe Integration**: Secure payment processing with options for full payment or partial payment + COD
+- **Modern Design Elements**: Glassmorphism, soft shadows, gradients, and shimmer effects
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: For type safety and better developer experience
+- **Tailwind CSS**: For styling and responsive design
+- **Framer Motion**: For animations and transitions
+- **Swiper**: For product carousels
+- **Stripe**: For payment processing
+- **React Fast Marquee**: For testimonial scrolling effect
 
-## Learn More
+## 📋 Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or higher)
+- npm or yarn
+- A Stripe account for payment processing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/gliss-skincare.git
+   cd gliss-skincare
