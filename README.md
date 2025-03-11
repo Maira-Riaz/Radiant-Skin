@@ -1,6 +1,6 @@
 # Radiant Skincare Website
 
-![Gliss Skincare](https://images.unsplash.com/photo-1619153709656-b2cf605b819b?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![Radiant Skincare](https://images.unsplash.com/photo-1619153709656-b2cf605b819b?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 Radiant Skincare is a modern, luxurious skincare brand focused on delivering radiant and healthy skin. This repository contains the source code for the Gliss e-commerce website built with Next.js.
 
